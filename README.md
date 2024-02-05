@@ -1,2 +1,2 @@
 # QTech-task-Figma-to-html
-Job task in QTech soft solutions
+Job task from QTech soft solutions
