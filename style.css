@@ -62,8 +62,14 @@ nav{
     font-size: 14px;
     background-color: rgb(32, 173, 150);
     color: white;
-    border: none;
+    border: 2px solid #20AD96;
+    font-weight: 600;
    
+}
+.navbar form .btn:hover{
+    background: transparent;
+    border: 2px solid #20AD96;
+    color: #20AD96;
 }
 
 
@@ -211,10 +217,46 @@ nav{
     position: absolute;
     top: 14px;
 }
+/*
+.hero-area .btn{
+    margin-top: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+.hero-area .btn span{
+    position: relative;
+    z-index: 1;
+}
+.hero-area .btn::before{
+    content: " ";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: orangered;
+    color: #20AD96;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+.hero-area .btn:hover::before{
+    width: 400px;
+    height: 300px;
+}
+*/
+.btn{
+    /* margin-top: 40px; */
+    border: 2px solid #20AD96;
+}
 .hero-area .btn{
     margin-top: 40px;
 }
-
+.btn:hover{
+    color: #20AD96;
+    border: 2px solid #20AD96;
+}
 
 /* Intro */
 .intro{
@@ -284,14 +326,38 @@ nav{
 }
 .star-review{
     padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
+    /* padding-right: 30px; */
+    padding-bottom: 10px;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
 }
-.star-review span{
+.star-widget input{
+    display: none;
+    /* float: left; */
+}
+.star-widget label{
+    padding: 5px;
+    transition: all 0.2s ease;
+}
+
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget > input:not(:checked) ~ label:hover ~ label{
+    color: #FEC84B;
+}
+input:checked ~ label{
+    color: #FEC84B;
+}
+/* .star-review span{
     color: #E0E2E8;
 }
 .star-review .checked{
     color: #FEC84B;
-}
+} */
+
 
 /* Blog Area */
 .blog-area{
@@ -552,11 +618,16 @@ footer{
     height: 44px;
     margin-left: 10px;
     border-radius: 10px;
-    border: none;
+    border: 2px solid #20AD96;
     background: #20AD96;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400;
+}
+.footer-top .sub-btn:hover{
+    border: 2px solid #20AD96;
+    background: #FFFFFF;
+    color: #20AD96;
 }
 .footer-bottom{
     padding-top: 60px;
